@@ -87,10 +87,11 @@ button:hover {
 
 .repositoryList{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap:30px;
     margin: 13px;
     min-height: 30vh;
+    font-weight: normal;
 }
 
 a{
@@ -154,9 +155,9 @@ a{
 /* Pagination Ends */
 
 /* Media Queries */
-@media (max-width:739px){
+@media screen and (max-width:800px){
     .repositoryList{
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
     }
     .search{
         margin: auto;
@@ -165,8 +166,8 @@ a{
         gap:20px
     }
   }
-  
-  @media (max-width:425px){
+
+  @media screen and (max-width:425px){
     .repositoryList{
       grid-template-columns: 1fr;
     }
@@ -180,6 +181,10 @@ a{
           
       }
   }
+
+
+  
+
    
 
 
