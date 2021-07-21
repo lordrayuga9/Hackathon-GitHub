@@ -161,10 +161,19 @@ a{
     }
     .search{
         margin: auto;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        background: rgba(0,0,0,0.9) ;
     }
     .item{
         gap:20px
     }
+    .header{
+
+margin: 80px;
+
+}
   }
 
   @media screen and (max-width:425px){
@@ -173,12 +182,18 @@ a{
     }
     .search{
       margin: auto;
-     
+      position: fixed;
+      top: 0;
+      width: 100vw;
+      background: rgba(0,0,0,0.9);
   }
       .item{
           width: calc(100% - 20px);
           margin: auto;
           
+      }
+      .header{
+          margin-top: 80px;
       }
   }
 
