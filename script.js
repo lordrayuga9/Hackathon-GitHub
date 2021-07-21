@@ -71,7 +71,7 @@ document
     const pagination_element= document.querySelector(".pagination");
 
     let current_page = 1;
-    let row = 6;
+    let row = 8;
   
   
     // To Display required items in a page
