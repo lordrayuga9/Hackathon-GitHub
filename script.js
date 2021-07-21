@@ -1,3 +1,22 @@
+const container = document.createElement("div");
+container.className = "container";
+container.innerHTML=`
+ <div class="search">
+                <input type="text" class="search-bar" placeholder="Access Github Repositories Using GIT UserName">
+                <button><i class="fab fa-searchengin"></i></button>
+                
+            </div>
+            
+            <div class="header">
+                <img src="" alt="" class="photo">
+                <h3 class="user-name"></h3>
+                <h3 class = "repos"> </h3>
+            </div>
+            <div class="repositoryList"></div>
+            <div class="pagination"></div>
+        
+`
+document.body.append(container)
 //  SEARCH FUNCTION
  
 function search() {
@@ -62,16 +81,18 @@ document
         let start = page * rows_per_page;
         let end = start + rows_per_page;
         
-        
-        for(let i= start;i<end;i++){
-            console.log(items[i])
+        let paginatedItems = items.slice(start, end);
+
+	for (let i = 0; i < paginatedItems.length; i++) {
+		let item = paginatedItems[i];
+            
             let item_element = document.createElement("div");
             item_element.className="item";
 
-            item_element.innerHTML = `<a href="${items[i].html_url}" target="_blank">
-            <h4><span>Name</span> : ${items[i].name}</h4>
-            <h4><span>Fork-Count</span> : ${items[i].forks}</h4>
-            <h4><span>Stars-Count</span> : ${items[i].stargazers_count}</h4>
+            item_element.innerHTML = `<a href="${item.html_url}" target="_blank">
+            <h4><span>Name</span> : ${item.name}</h4>
+            <h4><span>Fork-Count</span> : ${item.forks}</h4>
+            <h4><span>Stars-Count</span> : ${item.stargazers_count}</h4>
             </a>`
 
             listbox.append(item_element);
