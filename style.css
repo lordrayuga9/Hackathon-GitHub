@@ -90,9 +90,9 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap:30px;
+    margin: 13px;
     min-height: 30vh;
     font-weight: normal;
-    margin: 36px 36px;
 }
 
 a{
@@ -123,12 +123,8 @@ a{
 .pagination{
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center;;
     align-items:center;
-    position: fixed;
-    bottom: 0px;
-    left: 0;
-    right: 0;
 }
 
 
@@ -180,16 +176,11 @@ a{
 margin: 80px;
 
 }
-.pagination{
-    background:#000
-}
   }
 
   @media screen and (max-width:425px){
     .repositoryList{
       grid-template-columns: 1fr;
-      position: relative;
-      bottom: 63px;
     }
     .search{
       margin: auto;
