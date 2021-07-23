@@ -112,6 +112,7 @@ a{
     transform: scale(1.05);
     transition:0.3s ease-in-out;
     box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.4);
+    background:rgba(100,100,100,1);
 }
 
 /* Repository list ends */
