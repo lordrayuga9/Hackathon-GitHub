@@ -90,7 +90,7 @@ button:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap:30px;
-    margin: 13px;
+    margin: 13px 30px;
     min-height: 30vh;
     font-weight: normal;
 }
@@ -175,6 +175,18 @@ a{
 
 margin: 80px;
 
+}
+.pagination{
+    position:fixed;
+    bottom: 0px;
+    left:0;
+    right:0;
+    background: black;
+}
+.repositoryList{
+    position: relative;
+    bottom:68px;
+    
 }
   }
 
